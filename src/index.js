@@ -6,9 +6,9 @@ import { getAllProducts, getProductById, createProduct, deleteProduct } from './
 // ✅ Mostrar ayuda
 function showHelp() {
   console.log(`
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    🛍️  GESTOR DE PRODUCTOS - FAKE STORE API
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**********************************************
+  🛍️ GESTOR DE PRODUCTOS - FAKE STORE API
+**********************************************
 
 📋 COMANDOS DISPONIBLES:
 
@@ -31,7 +31,7 @@ function showHelp() {
   `);
 }
 
-// ✅ Función principal sin switch
+// ✅ Función principal
 async function processCommand() {
   if (!method || !resource) {
     showHelp();
@@ -68,5 +68,5 @@ async function processCommand() {
   }
 }
 
-// 🚀 Ejecutar
+
 processCommand();
