@@ -17,11 +17,10 @@ export async function fetchAPI(endpoint, options = {}) {
       throw new Error(`Respuesta vacía del servidor para ${endpoint}`);
     }
 
-    const data = JSON.parse(text);
-    return data;
-
+    return JSON.parse(text);
   } catch (err) {
     console.error('❌ Error en la petición:', err.message);
-    return null; 
+    return null;
   }
 }
+
